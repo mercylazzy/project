@@ -12,7 +12,7 @@
 .footer {
   position: relative;
   background-color: rgb(10, 6, 6);
-  background-image: url('/image-jp.jpg');
+  background-image: url(/Image1.avif);
   background-size: cover;
   height: 25rem;
   display: flex;
