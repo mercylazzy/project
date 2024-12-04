@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYLE>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            margin: 0 0 3px;
+            position: absolute;
+            animation: left 8s infinite;
+        }
+
+        @keyframes left{
+          from{
+                   left: 0;
+                }
+                to{
+                    left: 100%;
+                }
+        }
+
+        .box:first-child{
+           animation: left 8s infinite; 
+        }
+
+        .box:nth-child(2){
+            bottom: 0;
+            animation: right 8s infinite;
+        }
+
+        .box:nth-child(3){
+            animation: top 8s infinite;
+        }
+        .box:nth-child(4){
+            right: 0;
+            animation: bottom 8s infinite;
+        }
+
+        .box:nth-child(5){
+            top: 45%;
+            animation: left 5s infinite;
+        }
+
+        @keyframes bottom{
+          from{
+                   bottom: 0;
+                }
+                to{
+                    bottom: 100%;
+                }
+        }
+
+        @keyframes top{
+          from{
+                   top: 0;
+                }
+                to{
+                    top: 100%;
+                }
+        }
+
+        @keyframes right{
+          from{
+                   right: 0;
+                }
+                to{
+                    right: 100%;
+                }
+        }
+
+        @keyframes left{
+          from{
+                   left: 0;
+                }
+                to{
+                    left: 100%;
+                }
+        }
+
+        @keyframes bottom{
+          from{
+                   bottom: 0;
+                }
+                to{
+                    bottom: 100%;
+                }
+        }
+    </STYLE>
+    <link rel="stylesheet" href="SSS.CSS">
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>
